@@ -86,6 +86,8 @@ void PerformCalculation(HWND hwnd, char operation) {
         case '/': result = num1 / num2; break;
     }
     
-    std::string resStr = "Result: " + std::to_string(result);
-    MessageBox(hwnd, resStr.c_str(), "Result", MB_OK | MB_ICONINFORMATION);
+    char resultText[256];
+    sprintf(resultText, "Result: %.2f", result);
+
+    MessageBox(hwnd, resultText, "Result", MB_OK | MB_ICONINFORMATION);
 }

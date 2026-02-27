@@ -24,7 +24,6 @@ int main(int argc, char* argv[]) {
     }
 
     double average = sum / numbers.size();
-
     std::cout << "---------------------------------" << std::endl;
     std::cout << "Average of " << numbers.size() << " numbers = " << std::fixed << std::setprecision(0) <<average << std::endl;
     std::cout << "---------------------------------" << std::endl;
